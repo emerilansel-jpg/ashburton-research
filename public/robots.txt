@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /cms/
+
+Sitemap: https://ashburtonresearch.com/sitemap-index.xml
+LLMs-Context: https://ashburtonresearch.com/llms.txt
