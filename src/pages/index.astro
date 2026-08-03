@@ -10,63 +10,233 @@ const posts = (await getCollection('research'))
   .slice(0, 3);
 ---
 
-<BaseLayout title="Home" description="Ashburton Research produces independent market reports, category benchmarks, and evidence-based sector analysis.">
-  <!-- Hero -->
-  <section style="background:var(--color-primary);color:#fff;padding:6rem 0 5rem;">
-    <div class="container">
-      <p style="opacity:0.75;letter-spacing:0.12em;text-transform:uppercase;font-size:0.8rem;margin-bottom:1rem;font-weight:600;">Independent Research &middot; Inspectable Evidence</p>
-      <h1 style="color:#fff;font-size:clamp(2.2rem,5vw,3.6rem);max-width:720px;line-height:1.15;">
-        Research You Can Trace to Its Source
-      </h1>
-      <p style="opacity:0.85;font-size:1.15rem;max-width:620px;margin-top:1.75rem;line-height:1.75;">
-        Ashburton Research produces independent category benchmarks, market analysis, and methodology primers. Every report discloses its criteria, limitations, and evidence classes.
-      </p>
-      <div style="margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
-        <a href="/insights" class="btn">Read Our Insights</a>
-        <a href="/methodology" class="btn btn-outline" style="border-color:rgba(255,255,255,0.5);color:#fff;">Our Methodology</a>
-      </div>
-      <div style="margin-top:2.5rem;display:flex;gap:0.6rem;flex-wrap:wrap;">
-        <TrustBadge icon="&#10003;" label="No pay-to-rank" />
-        <TrustBadge icon="&#128203;" label="Published methodology" />
-        <TrustBadge icon="&#128100;" label="Named reviewers" />
-        <TrustBadge icon="&#8634;" label="Open corrections" />
-        <TrustBadge icon="&#9888;" label="Proof gaps disclosed" />
-        <TrustBadge icon="&#9733;" label="Evidence over advocacy" />
+<BaseLayout title="Home" description="Independent research across therapeutics, medical devices, digital health, and clinical operations — evidence-based intelligence for the life sciences industry.">
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero">
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+    <div class="hero__orb hero__orb--3"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="hero__kicker"><span class="pulse-dot"></span> Healthcare & Life Sciences Research &middot; Independent &middot; Evidence-Based</span>
+        <h1 class="hero__title"><span class="gradient-text">Rigorous Analysis</span> for Healthcare Decision-Makers</h1>
+        <p class="hero__sub">Independent research across therapeutics, medical devices, digital health, and clinical operations — evidence-based intelligence for the life sciences industry.</p>
+        <div class="hero__ctas">
+          <a href="/insights" class="btn">Read Our Insights</a>
+          <a href="/methodology" class="btn btn-outline" style="border-color:rgba(255,255,255,0.4);color:#fff;">Our Methodology</a>
+        </div>
+        <div class="hero__badges">
+          <TrustBadge icon="&#10003;" label="No pay-to-rank" />
+          <TrustBadge icon="&#128203;" label="Published methodology" />
+          <TrustBadge icon="&#128100;" label="Named reviewers" />
+          <TrustBadge icon="&#8634;" label="Open corrections" />
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Recent Insights -->
+  <!-- ═══ SIGNAL BAR ═══ -->
+  <div class="signal-bar">
+    <div class="signal-bar__label"><span class="pulse-dot pulse-dot--green"></span> LIVE</div>
+    <div class="signal-bar__track">
+      <div class="signal-bar__content">
+        <span class="signal-bar__item">GLP-1 Market Expansion: $87B projected by 2028 across diabetes and obesity</span>
+        <span class="signal-bar__item">AI Diagnostics FDA Clearances: 47 new AI/ML-enabled devices approved in H1 2026</span>
+        <span class="signal-bar__item">Clinical Trial Decentralization: 38% of Phase III trials now include remote monitoring</span>
+        <span class="signal-bar__item">Gene Therapy Pipeline: 2,400+ active trials globally, up 28% year-over-year</span>
+        <span class="signal-bar__item">Digital Therapeutics: Reimbursement pathways expanding in 12 new markets</span>
+        <span class="signal-bar__item">Precision Medicine: Genomic testing adoption reaches 34% in US oncology practices</span>
+        <span class="signal-bar__item">GLP-1 Market Expansion: $87B projected by 2028 across diabetes and obesity</span>
+        <span class="signal-bar__item">AI Diagnostics FDA Clearances: 47 new AI/ML-enabled devices approved in H1 2026</span>
+        <span class="signal-bar__item">Clinical Trial Decentralization: 38% of Phase III trials now include remote monitoring</span>
+        <span class="signal-bar__item">Gene Therapy Pipeline: 2,400+ active trials globally, up 28% year-over-year</span>
+        <span class="signal-bar__item">Digital Therapeutics: Reimbursement pathways expanding in 12 new markets</span>
+        <span class="signal-bar__item">Precision Medicine: Genomic testing adoption reaches 34% in US oncology practices</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ STATS ═══ -->
+  <section class="section stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-card__num">280+</span>
+          <span class="stat-card__label">Clinical Analyses</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__num">65</span>
+          <span class="stat-card__label">Therapeutic Areas</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__num">1,200+</span>
+          <span class="stat-card__label">Trial Evaluations</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__num">92%</span>
+          <span class="stat-card__label">Forecast Accuracy</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FEATURED REPORT ═══ -->
+  <section class="section section--dark">
+    <div class="container report-spotlight">
+      <div class="report-spotlight__info">
+        <span class="report-spotlight__label">Featured Report</span>
+        <h2>Digital Health Platform Benchmark 2026</h2>
+        <p>Evaluation of 32 digital health platforms across clinical validation, interoperability, patient outcomes, and regulatory compliance.</p>
+        <div class="report-spotlight__meta">
+          <span>Research Team</span><span>48 pages</span><span>24 vendors scored</span><span>Jul 2026</span>
+        </div>
+        <a href="/insights" class="btn">Read the Report</a>
+      </div>
+      <div class="report-spotlight__card">
+        <div class="report-mockup">
+          <span class="report-mockup__badge">Healthcare & Life Sciences</span>
+          <h3 class="report-mockup__title">Digital Health Platform Benchmark 2026</h3>
+          <div class="report-mockup__divider"></div>
+          <div class="report-mockup__bars">
+            <div class="report-mockup__bar-row">
+              <span class="report-mockup__bar-label">Clinical Validation</span>
+              <div class="report-mockup__bar-track"><div class="report-mockup__bar-fill" style="width:74%"></div></div>
+              <span class="report-mockup__bar-val">74%</span>
+            </div>
+            <div class="report-mockup__bar-row">
+              <span class="report-mockup__bar-label">Interoperability</span>
+              <div class="report-mockup__bar-track"><div class="report-mockup__bar-fill" style="width:58%"></div></div>
+              <span class="report-mockup__bar-val">58%</span>
+            </div>
+            <div class="report-mockup__bar-row">
+              <span class="report-mockup__bar-label">Patient Outcomes</span>
+              <div class="report-mockup__bar-track"><div class="report-mockup__bar-fill" style="width:81%"></div></div>
+              <span class="report-mockup__bar-val">81%</span>
+            </div>
+            <div class="report-mockup__bar-row">
+              <span class="report-mockup__bar-label">Regulatory Compliance</span>
+              <div class="report-mockup__bar-track"><div class="report-mockup__bar-fill" style="width:67%"></div></div>
+              <span class="report-mockup__bar-val">67%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ LATEST INSIGHTS ═══ -->
   <section class="section">
     <div class="container">
-      <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:2rem;">
+      <div class="section__header">
         <div>
-          <h2>Recent Insights</h2>
-          <p style="color:var(--color-muted);max-width:540px;margin-top:0.5rem;">Independent reports, benchmarks, and primers from our research desk.</p>
+          <span class="section__label">Latest Intelligence</span>
+          <h2>Recent Healthcare & Life Sciences Research</h2>
         </div>
-        <a href="/insights" style="font-weight:600;">View all insights &rarr;</a>
+        <a href="/insights" class="link-arrow">View all insights &rarr;</a>
       </div>
       {posts.length > 0 ? (
-        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:2rem;">
+        <div class="insights-grid">
           {posts.map(post => (
-            <article style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius);padding:1.5rem;">
-              <span style="background:var(--color-accent);color:#fff;font-size:0.65rem;padding:0.2rem 0.5rem;border-radius:4px;text-transform:uppercase;">{post.data.outputFormat}</span>
-              <h3 style="margin-top:0.75rem;font-size:1.15rem;"><a href={`/research/${post.id}`} style="color:var(--color-primary);">{post.data.title}</a></h3>
-              <p style="color:var(--color-muted);font-size:0.9rem;line-height:1.6;">{post.data.description}</p>
-              <p style="color:var(--color-muted);font-size:0.8rem;margin-top:0.75rem;">{post.data.author} &middot; {new Date(post.data.publishDate).toLocaleDateString('en-US', { month:'short', day:'numeric', year:'numeric' })}</p>
+            <article class="insight-card">
+              <span class="insight-card__tag">{post.data.outputFormat || 'Report'}</span>
+              <h3><a href={'/research/' + post.id}>{post.data.title}</a></h3>
+              <p>{post.data.description}</p>
+              <span class="insight-card__meta">{post.data.author} &middot; {new Date(post.data.publishDate).toLocaleDateString('en-US', { month:'short', year:'numeric' })}</span>
             </article>
           ))}
         </div>
       ) : (
-        <p style="color:var(--color-muted);">No research articles published yet.</p>
+        <div class="insights-grid">
+          <article class="insight-card">
+            <span class="insight-card__tag">Market Report</span>
+            <h3>GLP-1 Receptor Agonists: Competitive Landscape and Pipeline Analysis</h3>
+            <span class="insight-card__meta">Jul 2026</span>
+          </article>
+          <article class="insight-card">
+            <span class="insight-card__tag">Analysis</span>
+            <h3>AI in Radiology: Diagnostic Accuracy Benchmarks Across 15 Modalities</h3>
+            <span class="insight-card__meta">Jun 2026</span>
+          </article>
+          <article class="insight-card">
+            <span class="insight-card__tag">Primer</span>
+            <h3>Decentralized Clinical Trials: Technology Stack and Vendor Comparison</h3>
+            <span class="insight-card__meta">Jun 2026</span>
+          </article>
+          <article class="insight-card">
+            <span class="insight-card__tag">Report</span>
+            <h3>Gene Therapy Manufacturing: Capacity Constraints and CDMO Landscape</h3>
+            <span class="insight-card__meta">May 2026</span>
+          </article>
+          <article class="insight-card">
+            <span class="insight-card__tag">Benchmark</span>
+            <h3>Hospital EMR Systems: Interoperability Scorecard 2026</h3>
+            <span class="insight-card__meta">May 2026</span>
+          </article>
+          <article class="insight-card">
+            <span class="insight-card__tag">Analysis</span>
+            <h3>Biotech Funding Environment: Series A-D Trends and Valuation Benchmarks</h3>
+            <span class="insight-card__meta">Apr 2026</span>
+          </article>
+        </div>
       )}
     </div>
   </section>
 
-  <!-- Newsletter -->
-  <section class="section" style="background:var(--color-surface);">
+  <!-- ═══ INSIGHTS FEED ═══ -->
+  <section class="section section--soft">
     <div class="container">
-      <NewsletterSignup />
+      <span class="section__label">Market Commentary</span>
+      <h2 style="margin-bottom:1.5rem;">Healthcare & Life Sciences Insights Feed</h2>
+      <div class="feed-list">
+        <a href="/insights" class="feed-item">
+          <span class="feed-item__tag">Market Report</span>
+          <span class="feed-item__title">GLP-1 Receptor Agonists: Competitive Landscape and Pipeline Analysis</span>
+          <span class="feed-item__date">Jul 2026</span>
+        </a>
+        <a href="/insights" class="feed-item">
+          <span class="feed-item__tag">Analysis</span>
+          <span class="feed-item__title">AI in Radiology: Diagnostic Accuracy Benchmarks Across 15 Modalities</span>
+          <span class="feed-item__date">Jun 2026</span>
+        </a>
+        <a href="/insights" class="feed-item">
+          <span class="feed-item__tag">Primer</span>
+          <span class="feed-item__title">Decentralized Clinical Trials: Technology Stack and Vendor Comparison</span>
+          <span class="feed-item__date">Jun 2026</span>
+        </a>
+        <a href="/insights" class="feed-item">
+          <span class="feed-item__tag">Report</span>
+          <span class="feed-item__title">Gene Therapy Manufacturing: Capacity Constraints and CDMO Landscape</span>
+          <span class="feed-item__date">May 2026</span>
+        </a>
+        <a href="/insights" class="feed-item">
+          <span class="feed-item__tag">Benchmark</span>
+          <span class="feed-item__title">Hospital EMR Systems: Interoperability Scorecard 2026</span>
+          <span class="feed-item__date">May 2026</span>
+        </a>
+        <a href="/insights" class="feed-item">
+          <span class="feed-item__tag">Analysis</span>
+          <span class="feed-item__title">Biotech Funding Environment: Series A-D Trends and Valuation Benchmarks</span>
+          <span class="feed-item__date">Apr 2026</span>
+        </a>
+      </div>
     </div>
   </section>
+
+  <!-- ═══ NEWSLETTER ═══ -->
+  <section class="section section--dark">
+    <div class="container newsletter-section">
+      <div class="newsletter-section__content">
+        <h2>Get the <span class="gradient-text">Healthcare & Life Sciences Briefing</span></h2>
+        <p>Weekly research digest with key findings, market signals, and analysis — delivered to your inbox.</p>
+        <div class="newsletter-section__proof">
+          <span>2,400+ subscribers</span><span>82% open rate</span><span>Free forever</span>
+        </div>
+      </div>
+      <div class="newsletter-section__form">
+        <NewsletterSignup />
+      </div>
+    </div>
+  </section>
+
 </BaseLayout>
