@@ -26,10 +26,8 @@ tags:
 disclosure: This report is published by Ashburton Research, an independent research firm covering Functional Medicine, Holistic Health, and Advanced Nutritional Care. Ashburton Research maintains strict analytical independence and has no investment banking, advisory, or vendor relationships that would compromise the objectivity of this analysis. The firm does not accept payment from any provider evaluated in this report. All scoring, rankings, and conclusions reflect the independent judgment of the research team based on publicly available data, market intelligence, and a transparent methodology framework. No vendor had input into the selection criteria, scoring weights, or final rankings. This report is for informational purposes only and does not constitute medical advice, a recommendation for clinical care, or a guarantee of outcomes. Readers should conduct their own due diligence before engaging any healthcare provider.
 limitations: This report is based on publicly available information as of March–April 2026. Ashburton Research did not conduct primary research, site visits, or direct interviews with providers. Scores are comparative and reflect the quality and completeness of public information, not necessarily the clinical quality of services. Providers with limited public disclosure may receive lower Independent Verification scores despite potentially excellent clinical outcomes. The functional medicine field lacks standardized outcome reporting, making cross-provider comparison inherently challenging. This report should be used as a starting point for due diligence, not as a substitute for direct inquiry with prospective providers.
 featured: false
-heroImage: /images/posts/functional-lab-testing/functional-lab-testing--article-.jpg
 status: Live
 date: 2026-10-05
-featured_image: /images/posts/functional-lab-testing/functional-lab-testing--article-.jpg
 ---
 
 
